@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="1050" viewBox="0 0 1400 1050">
+<rect width="1400" height="1050" fill="#f3f6f9"/>
+<rect width="1400" height="270" fill="#162d44"/>
+<g font-family="Arial, sans-serif">
+<text x="70" y="60" fill="#95d6bd" font-size="18" letter-spacing="3">PERSONAL BACKEND PROJECT · ANSHIKA JAIN</text>
+<text x="70" y="132" fill="#ffffff" font-size="54" font-weight="700">Campus Records API</text>
+<text x="70" y="185" fill="#d4e2ee" font-size="25">Java 21 · Spring Boot 4.1 · Spring Data JPA · Flyway</text>
+<text x="70" y="231" fill="#95d6bd" font-size="20">API project overview — original CRUD service, developed with AI assistance</text>
+<rect x="70" y="305" width="1260" height="100" rx="16" fill="#ffffff"/>
+<text x="104" y="350" fill="#183b37" font-size="27" font-weight="700">8 automated tests passed</text>
+<text x="104" y="381" fill="#5a6978" font-size="18">Real Spring context + HTTP validation + H2 database · GitHub Actions build verified</text>
+<text x="70" y="462" fill="#162d44" font-size="27" font-weight="700">A complete, predictable CRUD workflow</text>
+<g font-size="21" fill="#33485a">
+<rect x="70" y="487" width="1260" height="287" rx="14" fill="white"/>
+<text x="102" y="532" fill="#17715a" font-weight="700">POST</text><text x="242" y="532">/api/v1/students</text><text x="865" y="532">201 · Create + Location header</text>
+<path d="M100 551H1300" stroke="#e8edf1"/>
+<text x="102" y="583" fill="#17715a" font-weight="700">GET</text><text x="242" y="583">/api/v1/students</text><text x="865" y="583">200 · Search + pagination</text>
+<path d="M100 602H1300" stroke="#e8edf1"/>
+<text x="102" y="634" fill="#17715a" font-weight="700">GET</text><text x="242" y="634">/api/v1/students/{id}</text><text x="865" y="634">200 / 404 · Find a record</text>
+<path d="M100 653H1300" stroke="#e8edf1"/>
+<text x="102" y="685" fill="#17715a" font-weight="700">PUT</text><text x="242" y="685">/api/v1/students/{id}</text><text x="865" y="685">200 / 409 · Validated update</text>
+<path d="M100 704H1300" stroke="#e8edf1"/>
+<text x="102" y="736" fill="#17715a" font-weight="700">DELETE</text><text x="242" y="736">/api/v1/students/{id}</text><text x="865" y="736">204 / 404 · Remove a record</text>
+</g>
+<rect x="70" y="806" width="1260" height="77" rx="14" fill="#e3efe9"/>
+<text x="102" y="853" fill="#183b37" font-size="23">Controller → Service → Repository → Database   |   Centralized error handling</text>
+<text x="70" y="928" fill="#33485a" font-size="20">H2 demo verified · MySQL profile included, not yet integration-tested · Postman collection included</text>
+<text x="70" y="969" fill="#5a6978" font-size="18">Local learning demo with fictional records. No authentication or public API hosting. Separate from the Angular app.</text>
+<text x="70" y="1011" fill="#17715a" font-size="20">github.com/anshikajain-1723/campus-records-api</text>
+</g></svg>

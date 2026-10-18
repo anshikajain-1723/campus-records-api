@@ -2,6 +2,8 @@
 
 An original **Java 21 / Spring Boot 4.1** student-records CRUD service created for **Anshika Jain’s personal portfolio**, with AI assistance. It demonstrates backend fundamentals alongside an Angular-focused professional profile. It is not employer code, paid client work, or a claim of professional backend specialization.
 
+![API project overview](docs/project-overview.png)
+
 ## Features
 
 - REST create, read, update and delete operations with meaningful HTTP status codes

@@ -13,3 +13,5 @@
   - GET deleted student → 404
 
 MySQL profile is included but not run against a MySQL server. No public API deployment or frontend integration is claimed.
+
+GitHub Actions Java build and integration-test workflow passed on the public repository.
