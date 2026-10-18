@@ -1,0 +1,98 @@
+{
+  "info": {
+    "name": "Campus Records API \u2014 personal demo",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://127.0.0.1:8080"
+    },
+    {
+      "key": "studentId",
+      "value": ""
+    }
+  ],
+  "item": [
+    {
+      "name": "Create fictional student",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/v1/students",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Alex Morgan\",\n  \"email\": \"alex@example.com\",\n  \"course\": \"Computer Science\",\n  \"academicYear\": 2,\n  \"status\": \"ACTIVE\",\n  \"enrolledOn\": \"2025-08-10\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Created\", () => pm.response.to.have.status(201));",
+              "if (pm.response.code === 201) pm.collectionVariables.set(\"studentId\", pm.response.json().id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "List and search",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/v1/students?search=alex&status=ACTIVE&page=0&size=10"
+      }
+    },
+    {
+      "name": "Get student",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/v1/students/{{studentId}}"
+      }
+    },
+    {
+      "name": "Update student",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": "{{baseUrl}}/api/v1/students/{{studentId}}",
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"fullName\": \"Alex Morgan\",\n  \"email\": \"alex@example.com\",\n  \"course\": \"Computer Science\",\n  \"academicYear\": 3,\n  \"status\": \"ON_LEAVE\",\n  \"enrolledOn\": \"2025-08-10\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "Delete test student",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": "{{baseUrl}}/api/v1/students/{{studentId}}"
+      }
+    }
+  ]
+}
